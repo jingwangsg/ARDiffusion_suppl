@@ -1,17 +1,69 @@
 ## Baseline Results
 
-.center [
-
-| Context Length | Method | Memory Budget | 0-16 | 16-48 | overall |
-| -------------- | ----------------------------------------------------- | ------------- | ---- | ----- | ------- |
-| 48 | Prepending Memory + Memory Compression (Ours) | 16 | 0.36 | 0.25 | 0.31 |
-| 48 | FIFO Diffusion [1] | 16 | 0.12 | 0.03 | 0.075 |
-| 48 | Outpainting | 16 | 0.10 | 0.02 | 0.06 |
-| 48 | Prepend Memory + Last 16 Frames [2] | 16 | 0.42 | 0.00 | 0.21 |
-| 48 | Prepend Memory + Last 32 Frames with 1 Frame Skip [2] | 16 | 0.23 | 0.15 | 0.19 |
-| 48 | GameNGen [3] | 16 | 0.14 | 0.00 | 0.07 |
-
-]
+<div style="display: flex; justify-content: center;">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Context Length</th>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Memory Budget</th>
+<th style="text-align:center">0-16</th>
+<th style="text-align:center">16-48</th>
+<th style="text-align:center">overall</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">48</td>
+<td style="text-align:left">Prepending Memory + Memory Compression (Ours)</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">0.36</td>
+<td style="text-align:center">0.25</td>
+<td style="text-align:center">0.31</td>
+</tr>
+<tr>
+<td style="text-align:center">48</td>
+<td style="text-align:left">FIFO Diffusion [1]</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">0.12</td>
+<td style="text-align:center">0.03</td>
+<td style="text-align:center">0.075</td>
+</tr>
+<tr>
+<td style="text-align:center">48</td>
+<td style="text-align:left">Outpainting</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">0.10</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">0.06</td>
+</tr>
+<tr>
+<td style="text-align:center">48</td>
+<td style="text-align:left">Prepend Memory + Last 16 Frames [2]</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">0.42</td>
+<td style="text-align:center">0.00</td>
+<td style="text-align:center">0.21</td>
+</tr>
+<tr>
+<td style="text-align:center">48</td>
+<td style="text-align:left">Prepend Memory + Last 32 Frames with 1 Frame Skip [2]</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">0.23</td>
+<td style="text-align:center">0.15</td>
+<td style="text-align:center">0.19</td>
+</tr>
+<tr>
+<td style="text-align:center">48</td>
+<td style="text-align:left">GameNGen [3]</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">0.14</td>
+<td style="text-align:center">0.00</td>
+<td style="text-align:center">0.07</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 <center><div style="width: 800px; font-size: 1.2em; text-align: left"><b>Table 1. Baseline Results across Multiple Frame Conditioning Strategies. </b>Context Length refers to the number of raw frames used as prior observations (i.e., memory). By default, we use a default Context Length of 48 frames, along with an additional 16 frames for generating the output—except for GameNGen, which generates one frame at a time. To ensure a fair comparison, we constrain all methods to a memory budget of 16 frames. Accordingly, we either sample 16 frames from the 48-frame context or compress the 32 context frames into an equivalent number of tokens corresponding to 16 frames. </div></center>
 
