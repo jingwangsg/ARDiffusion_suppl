@@ -1,15 +1,64 @@
 ## Baseline Results
 
 <center>
-
-| Context Length | Method                                            | Memory Budget | 0-16 | 0-32 | overall |
-| -------------- | ------------------------------------------------- | ------------- | ---- | ---- | ------- |
-| 48             | prepending memory + memory compression            | 16            | 0.36 | 0.25 | 0.31    |
-| 48             | fifo                                              | 16            | 0.12 | 0.03 | 0.075   |
-| 48             | outpainting                                       | 16            | 0.10 | 0.02 | 0.06    |
-| 48             | prepend memory + last 16 frames as mem            | 16            | 0.42 | 0.00 | 0.21    |
-| 48             | prepend memory + last 32 frames with 1 frame skip | 16            | 0.23 | 0.16 | 0.195   |
-| 48             | GameNGen                                          | 16            | 0.14 | 0.00 | 0.07    |
+<table>
+  <tr>
+    <th>Context Length</th>
+    <th>Method</th>
+    <th>Memory Budget</th>
+    <th>0-16</th>
+    <th>0-32</th>
+    <th>overall</th>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>prepending memory + memory compression</td>
+    <td>16</td>
+    <td>0.36</td>
+    <td>0.25</td>
+    <td>0.31</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>fifo</td>
+    <td>16</td>
+    <td>0.12</td>
+    <td>0.03</td>
+    <td>0.075</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>outpainting</td>
+    <td>16</td>
+    <td>0.10</td>
+    <td>0.02</td>
+    <td>0.06</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>prepend memory + last 16 frames as mem</td>
+    <td>16</td>
+    <td>0.42</td>
+    <td>0.00</td>
+    <td>0.21</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>prepend memory + last 32 frames with 1 frame skip</td>
+    <td>16</td>
+    <td>0.23</td>
+    <td>0.16</td>
+    <td>0.195</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>GameNGen</td>
+    <td>16</td>
+    <td>0.14</td>
+    <td>0.00</td>
+    <td>0.07</td>
+  </tr>
+</table>
 
 </center>
 
