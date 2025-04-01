@@ -85,7 +85,7 @@
 
 <br>
 
-This demonstrates the error accumulation of OpenSoraPlan+FIFO with different time steps schedulers. We consider the schedule that is $\text{Uniform}([0,999^{\alpha}] )^{1/\alpha}$. Here we set $\alpha$ as $1/2$ (order 2) and $1/3$ (order 3). The ``reverse'' refers to the schedule that is $999 - \text{Uniform}([0,999^{\alpha}] )^{1/\alpha}$ For more details of scheduling, please refer to Fig. 3.
+This demonstrates the error accumulation of OpenSoraPlan+FIFO with different time steps schedulers. We consider the schedule that is $\text{Uniform}([0,999^{\alpha}] )^{1/\alpha}$. Here we set $\alpha$ as $1/2$ (order 2) and $1/3$ (order 3). The ``reverse'' refers to the schedule that is $999 - \text{Uniform}([0,999^{\alpha}] )^{1/\alpha}$. For more details of scheduling, please refer to Fig. 3.
 
 <center><img src="assets/schedule.png" alt="Timestep Scheduling Details" width="1000"/></center>
 
