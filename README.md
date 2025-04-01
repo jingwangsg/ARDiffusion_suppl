@@ -1,6 +1,5 @@
 ## Baseline Results
 
-<center>
 <table>
 <thead>
 <tr>
@@ -63,9 +62,8 @@
 </tr>
 </tbody>
 </table>
-</center>
 
-<center><div style="width: 800px; font-size: 1.2em; text-align: left"><b>Table 1. Baseline Results across Multiple Frame Conditioning Strategies. </b>Context Length refers to the number of raw frames used as prior observations (i.e., memory). By default, we use a default Context Length of 48 frames, along with an additional 16 frames for generating the output—except for GameNGen, which generates one frame at a time. To ensure a fair comparison, we constrain all methods to a memory budget of 16 frames. Accordingly, we either sample 16 frames from the 48-frame context or compress the 32 context frames into an equivalent number of tokens corresponding to 16 frames. </div></center>
+<div style="width: 1200px; font-size: 1.2em; text-align: left"><b>Table 1. Baseline Results across Multiple Frame Conditioning Strategies. </b>Context Length refers to the number of raw frames used as prior observations (i.e., memory). By default, we use a default Context Length of 48 frames, along with an additional 16 frames for generating the output—except for GameNGen, which generates one frame at a time. To ensure a fair comparison, we constrain all methods to a memory budget of 16 frames. Accordingly, we either sample 16 frames from the 48-frame context or compress the 32 context frames into an equivalent number of tokens corresponding to 16 frames. </div>
 
 <br>
 [1] Jihwan Kim, Junoh Kang, Jinyoung Choi, Bohyung Han. FIFO-Diffusion: Generating Infinite Videos from Text without Training. NeurIPS 2024
