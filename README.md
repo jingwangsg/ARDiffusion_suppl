@@ -40,9 +40,9 @@
 <td style="text-align:center">48</td>
 <td style="text-align:left">Prepend Memory + Last 16 Frames [2]</td>
 <td style="text-align:center">16</td>
-<td style="text-align:center">0.42</td>
+<td style="text-align:center">0.47</td>
 <td style="text-align:center">0.00</td>
-<td style="text-align:center">0.21</td>
+<td style="text-align:center">0.235</td>
 </tr>
 <tr>
 <td style="text-align:center">48</td>
