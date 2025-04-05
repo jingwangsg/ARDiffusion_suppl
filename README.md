@@ -120,11 +120,7 @@ For any random variables $X,Y,Z$ supported on $\Omega$ and measurable functions 
 Proof:
 
 We first decompose $I(X,f(X),g(X);Z|Y)$ in two ways as follows.
-$$
-    I(X,f(X),g(X);Z|Y)\\
-    =I(f(X);Z|Y)+I(X;Z|Y,f(X))+I(g(X);Z|Y,f(X),X)\\
-    =I(f(X);Z|Y)+I(X;Z|Y,f(X)),
-$$
+$$I(X,f(X),g(X);Z|Y)\\=I(f(X);Z|Y)+I(X;Z|Y,f(X))+I(g(X);Z|Y,f(X),X)\\=I(f(X);Z|Y)+I(X;Z|Y,f(X)),$$
 where the first equality results from the chain rule, and the second equality results from the fact that $I(g(X);Z|Y,f(X),X)=0$. Similarly, we have that
 $$
     I(X,f(X),g(X);Z|Y)\\
