@@ -120,27 +120,28 @@ For any random variables $X,Y,Z$ supported on $\Omega$ and measurable functions 
 Proof:
 
 We first decompose $I(X,f(X),g(X);Z|Y)$ in two ways as follows.
-$$
-I(X,f(X),g(X);Z|Y)\\=I(f(X);Z|Y)+I(X;Z|Y,f(X))+I(g(X);Z|Y,f(X),X)\\=I(f(X);Z|Y)+I(X;Z|Y,f(X)),
-$$
+
+$I(X,f(X),g(X);Z|Y)\\
+=I(f(X);Z|Y)+I(X;Z|Y,f(X))+I(g(X);Z|Y,f(X),X)\\
+=I(f(X);Z|Y)+I(X;Z|Y,f(X)),$
+
 where the first equality results from the chain rule, and the second equality results from the fact that $I(g(X);Z|Y,f(X),X)=0$. Similarly, we have that
-$$
-    I(X,f(X),g(X);Z|Y)\\
-    =I(g(X);Z|Y)+I(X;Z|Y,g(X)).
-$$
+
+$I(X,f(X),g(X);Z|Y)\\
+    =I(g(X);Z|Y)+I(X;Z|Y,g(X)).$
+
 Thus, we have that
-$$
-    I(X;Z|Y,g(X)) - I(X;Z|Y,f(X)) = I(f(X);Z|Y) - I(g(X);Z|Y).
-$$
+
+$I(X;Z|Y,g(X)) - I(X;Z|Y,f(X)) = I(f(X);Z|Y) - I(g(X);Z|Y).$
+
 In the following, we will show that the right-hand side of this equation is non-negative. In fact, the chain rule shows that
-$$
-    I(g(X),f(X);Z|Y)= I(g(X);Z|Y)+I(f(X);Z|Y,g(X)).
-$$
+
+$I(g(X),f(X);Z|Y)= I(g(X);Z|Y)+I(f(X);Z|Y,g(X)).$
+
 Similarly, we have that
-$$
-    I(g(X),f(X);Z|Y)= I(f(X);Z|Y)+I(g(X);Z|Y,f(X))=I(f(X);Z|Y),
-$$
+
+$I(g(X),f(X);Z|Y)= I(f(X);Z|Y)+I(g(X);Z|Y,f(X))=I(f(X);Z|Y),$
+
 where the last equality results from that $g(x)=h(f(x))$ for all $x$. Thus, we have that
-$$
-    I(f(X);Z|Y) - I(g(X);Z|Y)=I(f(X);Z|Y,g(X))\geq 0.
-$$
+
+$I(f(X);Z|Y) - I(g(X);Z|Y)=I(f(X);Z|Y,g(X))\geq 0.$
